@@ -27,7 +27,7 @@ public class UserControllerTest { }
 
 然后 `Spring` 在测试问题域中引入**事务管理**初衷是什么？为了**解决什么问题**才需要将它引入？官方文档介绍 [Transaction management](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#testing-tx)
 
-> ![Transaction management](./transactional-management.png)
+> ![Transaction management](http://aikin.me/2018/05/19/do-not-use-transactional-annotation-on-spring-integration-test/transactional-management.png)
 
 
 按照官方文档意思，为了解决测试运行时，程序访问真实的数据库，改变数据的状态，从而影响到后续的测试问题。
