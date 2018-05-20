@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 @Service
 @Profile("test")
-class TruncateDatabaseService {
+class TruncateDatabaseBasicOnMybatisService {
     @Autowired
     private SqlSessionFactory sqlSessionFactory;
 

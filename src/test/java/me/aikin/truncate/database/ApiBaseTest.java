@@ -18,11 +18,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ApiBaseTest {
 
     @Autowired
-    private TruncateDatabaseService truncateDatabaseService;
+    private TruncateDatabaseBasicOnMybatisService truncateDatabaseBasicOnMybatisService;
+
+    @Autowired
+    private TruncateDatabaseBasicOnHibernateService truncateDatabaseBasicOnHibernateService;
 
     @BeforeEach
-    public void setup() throws SQLException {
-        truncateDatabaseService.truncate();
+    public void setup() throws Exception {
+        truncateDatabaseBasicOnMybatisService.truncate();
+        truncateDatabaseBasicOnHibernateService.truncate();
     }
 
 
