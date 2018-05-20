@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/truncate_database_test
+    username: root
+    password:
+    name: truncate_database_test
+    driver-class-name: com.mysql.cj.jdbc.Driver

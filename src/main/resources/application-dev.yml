@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/truncate_database_dev
+    username: root
+    password:
+    name: truncate_database_dev
+    driver-class-name: com.mysql.cj.jdbc.Driver
