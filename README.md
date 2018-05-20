@@ -40,3 +40,5 @@ public class UserControllerTest { }
 
 ### 写在最后
 如何做？实现一个 `TruncateDatabaseService`，只删除表的数据，不删除表的结果。 在测试基类的`@BeforeEach`，执行 `truncate`。
+
+> [原文链接](http://aikin.me/2018/05/19/do-not-use-transactional-annotation-on-spring-integration-test/)
